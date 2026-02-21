@@ -1,11 +1,20 @@
 import './styles/theme.css';
 import './styles/global.css';
+import { TimerIcon, HouseIcon, RotateCcwIcon, SunIcon, MoonIcon } from 'lucide-react';
+import { Container } from './components/Container';
+import { Heading } from './components/Heading';
 
 export function App(){
     return (
         <>
-            <h1>Olá, mundo! (do APP)</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa eligendi, iste corporis nam, natus saepe laudantium omnis, magnam non error provident voluptatibus quasi a debitis perferendis. Veritatis, esse explicabo!</p>
+            <div className="container-fluid">
+                <Heading>Heading</Heading>
+                <Container><TimerIcon /></Container>
+                <Container><HouseIcon /></Container>
+                <Container><RotateCcwIcon /></Container>
+                <Container><SunIcon /></Container>
+                <Container><MoonIcon /></Container>
+            </div>    
         </>
     );
 }
